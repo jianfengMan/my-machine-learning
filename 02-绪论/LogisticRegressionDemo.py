@@ -8,7 +8,10 @@ print(__doc__)
 
 from numpy import *
 from sklearn.datasets import load_iris
-
+# 导入lena图片
+from scipy.misc import lena
+img = lena()
+img
 #加载鸢尾花数据集
 iris = load_iris()
 samples = iris.data
