@@ -14,7 +14,7 @@
 
 **SVR 引入两个松弛变量：ξξ 和 ξ∗**
 
-![image-20181228155653551](/Users/zhangjianfeng/Library/Application Support/typora-user-images/image-20181228155653551.png)
+![image-20181228155653551](../img/image-20181228155653551.png)
 
 * 目标函数 f(x) = wx+b
 * 落在隔离带边缘超平面上的样本，才是 SVR 的支持向量！

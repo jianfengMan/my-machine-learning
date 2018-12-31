@@ -6,5 +6,5 @@
 * SVR认为，只要估计的y在实际的y的两侧一个固定的范围(epsilon)之内，就认为是估计正确，没有任何损失；
 * SVR的优化目标，是|W|最小，这样y-x曲线的斜率最小，这个function最flat，这样据说可以增加估计的鲁棒性。
 
-![image-20181228165229985](/Users/zhangjianfeng/Library/Application Support/typora-user-images/image-20181228165229985.png)
+![image-20181228165229985](../img/image-20181228165229985.png)
 
