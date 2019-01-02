@@ -103,7 +103,7 @@ features_mat = np.hstack((degree_enc, education_enc, skills_enc, working_enc))
 # print(len(skills_enc))
 # print(len(working_enc))
 # print(len(label_mat))
-# print(label_mat)
+print(features_mat.shape)
 
 # 切分数据集
 X_train, X_test, y_train, y_test = train_test_split(features_mat,
