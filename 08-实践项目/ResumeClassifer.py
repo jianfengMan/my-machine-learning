@@ -48,9 +48,8 @@ def convertSplitLabelEncoder(trans_values):
     arr_values = list(map(convert, trans_values))
     all_values = [x for j in arr_values for x in j]
     le = labelEncoder.fit(all_values)
-    skills_label = list(map(lambda x: le.transform(x), arr_values))
-    list_skills = [x for j in skills_label for x in j]
-    return skills_label, len(set(list_skills))
+    labels = list(map(lambda x: le.transform(x), arr_values))
+    return labels, len(set(all_values))
 
 
 # 进行OneHotEcoder编码
