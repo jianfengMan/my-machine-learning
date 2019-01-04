@@ -119,7 +119,7 @@ data['runtime'] = stas.fit_transform(data['runtime'].values.reshape(-1, 1))
 print('----------------2---------------')
 print(data.info())
 print(data.describe())
-# 过滤数据
+
 type_labels, type_label_len = convertSplitLabelEncoder(data['type'])
 
 type_enc = convertSplitEncoder(type_labels, type_label_len)
@@ -131,7 +131,7 @@ print(data['votes'].values.shape)
 print(data['runtime'].values.shape)
 print(type_enc.shape)
 
-# 用stack会报错
+# 用hstack会报错
 features = np.column_stack((data['votes'].values, data['runtime'].values, type_enc))
 labels = data['rate']
 print(features.shape)
