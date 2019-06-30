@@ -28,8 +28,7 @@ def optimizeStates(model, X):
 
     print("\nstates:")
     for state in list(map(lambda x: states[x], Y[1])):
-        print
-        " ", state
+        print(" ", state)
 
 
 states = ["Gold", "Silver", "Bronze"]
